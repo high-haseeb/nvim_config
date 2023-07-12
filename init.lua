@@ -1,4 +1,3 @@
-
 return {
   -- Configure AstroNvim updates
   updater = {
@@ -28,12 +27,11 @@ return {
   },
 
   lsp = {
-skip_setup = {"tsserver"},
     -- customize lsp formatting options
     formatting = {
       -- control auto formatting on save
       format_on_save = {
-        enabled = true, -- enable or disable format on save globally
+        enabled = false, -- enable or disable format on save globally
         allow_filetypes = { -- enable format on save for specified filetypes only
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
@@ -41,7 +39,7 @@ skip_setup = {"tsserver"},
       },
       disabled = { -- disable formatting capabilities for the listed language servers
       },
-      timeout_ms = 5000, -- default format timeout
+      timeout_ms = 3000, -- default format timeout
     },
     -- enable servers that you already have installed without mason
     servers = {
@@ -62,6 +60,4 @@ skip_setup = {"tsserver"},
   -- This function is run last and is a good place to configuring
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
-  polish = function()
-  end,
 }
