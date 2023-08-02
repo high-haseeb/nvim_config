@@ -17,6 +17,7 @@ return {
         "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
         "    ██   ████   ████   ██ ██      ██",
       }
+      opts.section.buttons.val = {}
       return opts
     end,
   },
