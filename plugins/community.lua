@@ -8,4 +8,5 @@ return {
   { import = "astrocommunity.editing-support.dial-nvim" },
   { import = "astrocommunity.editing-support.vim-move" },
   { import = "astrocommunity.utility.nvim-toggler" },
+  { import = "astrocommunity.pack.tailwindcss" },
 }
